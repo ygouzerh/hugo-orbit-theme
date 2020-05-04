@@ -27,6 +27,10 @@
 	{{ partial "skills.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.others.enable }}
+    {{ partial "others.html" . }}
+    {{ end }}
+
 	</div><!--//main-body-->
     </div>
 

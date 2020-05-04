@@ -114,6 +114,18 @@ p {
   margin-top: 0;
   margin-bottom: 5px;
 }
+.sidebar-wrapper .degree-level {
+  font-size: 14px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.sidebar-wrapper .degree-name {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
 .sidebar-wrapper .education-container .item {
   margin-bottom: 15px;
 }
@@ -123,7 +135,7 @@ p {
 .sidebar-wrapper .education-container .meta {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 500;
-  margin-bottom: 0px;
+  margin-bottom: 2px;
   margin-top: 0;
 }
 .sidebar-wrapper .education-container .time {
@@ -229,6 +241,9 @@ p {
 .main-wrapper .projects-section .item {
   margin-bottom: 15px;
 }
+.main-wrapper .projects-section .project-title-without-a {
+  color: #3d884d;
+}
 .skillset .item {
   margin-bottom: 15px;
   overflow: hidden;
@@ -286,7 +301,7 @@ p {
   .skillset .level-title {
     display: inline-block;
     float: left;
-    width: 30%;
+    width: 100%;
     margin-bottom: 0;
   }
   .skillset .level-bar {
@@ -295,6 +310,13 @@ p {
     float: left;
     position: relative;
     top: 1px;
+  }
+  .skillset .list {
+    display: inline-block;
+    width: 70%;
+    float: left;
+    position: relative;
+    top: 0px;
   }
 }
 /* Large devices (large desktops, 1200px and up) */

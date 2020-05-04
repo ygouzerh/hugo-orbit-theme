@@ -14,6 +14,10 @@
 		{{ partial "education.html" . }}
 		{{ end }}
 
+		{{ if .Site.Params.certifications.enable }}
+		{{ partial "certifications.html" . }}
+		{{ end }}
+
 		{{ if .Site.Params.language.enable }}
 		{{ partial "language.html" . }}
 		{{ end }}
