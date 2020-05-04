@@ -1,11 +1,9 @@
             <div class="education-container container-block">
-                <h2 class="container-block-title">{{ i18n "education" }}</h2>
-				{{ range .Site.Params.education.list }}
+                <h2 class="container-block-title">{{ .Site.Params.certifications.title }}</h2>
+				{{ range .Site.Params.certifications.list }}
                 <div class="item">
                     <h4 class="degree-level">{{ .level }}</h4>
-                    <h4 class="degree-name">{{ .name}}</h4>
-                    <h5 class="meta">{{ .grade }}</h5>
-                    <h5 class="meta">{{ .college }}</h5>
+                    <h5 class="meta">{{ .description }}</h5>
                     <div class="time">{{ .dates }}</div>
                 </div><!--//item-->
 				{{ end }}

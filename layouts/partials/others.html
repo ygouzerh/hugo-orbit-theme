@@ -1,0 +1,17 @@
+<section class="section projects-section">
+    <h2 class="section-title"><i class="fa {{ .Site.Params.experiences.icon }}"></i>{{ .Site.Params.others.title }}</h2>
+    <div class="intro">
+        <p>{{ with .Site.Params.others.intro }}{{ . | markdownify }}{{ end }}</p>
+    </div><!--//intro-->
+    {{ range .Site.Params.others.list }}
+    <div class="item">
+        <span class="project-title"><!--//color: #3d884d;--> 
+            {{ if (isset . "url") }}
+                <a href="{{ .url }}">{{ .title }}</a>
+            {{ else }}
+                <span class="project-title-without-a"> {{ .title }}</span>
+            {{ end }}
+        </span><span class="project-tagline">{{ with .tagline }}{{ . | markdownify }}{{ end }}</span>
+    </div><!--//item-->
+    {{ end }}
+</section><!--//section-->
